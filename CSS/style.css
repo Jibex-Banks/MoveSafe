@@ -1,0 +1,584 @@
+*{
+    font-family: 'Open Sans';
+}
+
+body{
+    background-color: rgb(247, 247, 247);
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    color: #28bfed;
+    text-align: center;
+    font-size: larger;    
+}
+
+nav{
+    border: 1px solid #28bfed;
+    background-color: transparent;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.100), 0 8px 8px  rgba(0, 0, 0, 0.100);
+    width: 90%;
+    height: 4em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    margin: 20px 0;
+}
+
+nav .logo{
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul a:hover{
+    background-color: #28bfed;
+    color: white;
+    padding: 21px 0;
+}
+
+nav ul a:first-child:hover{
+    border-radius: 41px 0 0 41px;
+}
+
+nav ul a:last-child:hover{
+    border-radius: 0 41px  41px 0;
+}
+
+nav ul a:not():first-child:hover{
+    border-radius: 0;
+}
+
+nav .menuBar{
+    display: none;
+    cursor: pointer;
+}
+
+.sidebar{
+    display: none;
+}
+
+.hero{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28bfed;
+}
+
+.herodets{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.herodets h1{
+    font-size: 2.5em;
+    margin: 8px;
+    color: white;
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.338);
+    text-align: center;
+}
+
+.herodets button{
+    margin-top: 40px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 1.5px solid white;
+    color: #28bfed;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.100);
+}
+
+.herodets button:hover{
+    background-color: transparent;
+    color: white;
+    border-radius: 22px;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    margin: 40px 0;
+    justify-self: center;
+}
+
+.featureContainer{
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #28bfed;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.100);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.featureContainer:hover{
+    scale: 1.15;
+}
+
+.featureContainer img{
+    width: 40px;
+}
+
+.featureContainer h3{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+}
+
+.about{
+    width: 100%;
+    background-color: #28bfed;
+    padding-bottom: 40px;
+}
+
+.aboutContent{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.aboutContent h1{
+    color: white;
+    font-size: 2.4em;
+    text-align: center;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+
+}
+
+.aboutContent p{
+    color: white;
+    font-size: 20px;
+}
+
+.aboutContent span{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#Waitlist{
+    width: 100%;
+}
+
+.waitlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.waitlist h1{
+    font-size: 2em;
+    color: #28bfed;
+    text-align: center;
+    margin: 0;
+}
+
+.waitlist p{
+    font-size: 18px;
+    color: #28bfed;
+    margin-top: 6px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+}
+
+.waitlist form{
+    display: flex;
+    flex-direction: column;
+}
+
+.waitlist form label{
+    font-size: 20px;
+    color: #28bfed;
+    padding-left: 10px;
+}
+
+.waitlist form input{
+    font-size: 20px;
+    color: #28bfed;
+    background-color: transparent;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #28bfed;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.100);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.waitlist form button{
+    width: 80%;
+    align-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    border-radius: 22px;
+    border: 1.5px solid #28bfed;
+    color: white;
+    background-color: #28bfed;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.100);
+}
+
+.waitlist form button:hover{
+    background-color: transparent;
+    color: #28bfed;
+}
+
+#Contact{
+    background-color: #28bfed;
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.contact h1{
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+    margin: 0;
+}
+
+.contact p{
+    font-size: 20px;
+    color: white;
+    margin-top: 6px;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contact form label{
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+.contact form input, .contact textarea{
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.100);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contact textarea{
+    resize: vertical;
+    height: 100px;
+}
+
+.contact form button{
+    width: 80%;
+    align-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    border-radius: 22px;
+    border: 1.5px solid white;
+    color: #28bfed;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.100);
+}
+
+.contact form button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+footer .footertop, .footerCenter,.footerend{
+    width: 30%;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #28bfed;
+}
+
+footer h2{
+    font-size: 1.6em;
+    color: #28bfed;
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.338);
+    margin: 0;
+    text-align: center;
+}
+
+.footertop p{
+    color: #28bfed;
+    text-align: center;
+    justify-self: center;
+    font-size: 20px;
+}
+
+.footerCenter{
+    text-align: center;
+}
+
+.footerCenter .link{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.link a{
+    padding-bottom: 10px;
+}
+
+.footerend{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+}
+
+.footerend h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footerend a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.socialCont{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.socialItems{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.socialItems p{
+    margin: 8px;
+    padding: 0;
+}
+
+.socialItems:hover{
+    color: #28bfed;
+}
+
+.footerBottom{
+    bottom: 0;
+    width: 100%;
+    background-color: #28bfed;
+    margin: 0;
+}
+
+.footerBottom p{
+    padding: 5px 0;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* Media Query */
+/* Tabs */
+@media (min-width:550px) and (max-width:1000px) {
+    .features{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 40px;
+    }
+}
+
+@media (max-width:549px) {
+    .logo{
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .logo{
+        display: block;
+        padding-left: 10px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav .menuBar{
+        display: block;
+        padding-right: 15px;
+    }
+
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        background-color: white;
+        right: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .sidebar .xBar{
+        margin-top: 20px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .sidebar li{
+        list-style: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .sidebar a{
+        text-decoration: none;
+        color: gray;
+        width: 100%;
+    }
+
+    .sidebar a:hover{
+        color: #28bfed;
+    }
+
+    .herodets h1{
+        font-size: 2.3em;
+    }   
+
+    .contact form{
+        align-items: center;
+    }
+
+    .contact form label{
+        align-self: start;
+    }
+
+    .aboutContent{
+        width: 80%;
+        text-align: justify;
+    }
+
+    .features{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div{
+        width: 80%;
+    }
+
+    footer h2{
+        font-size: 2em;
+    }
+
+    .footerend{
+        align-items: center;
+    }
+}
